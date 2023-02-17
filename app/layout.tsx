@@ -1,6 +1,7 @@
 import './globals.css';
 import clsx from 'clsx';
 import localFont from '@next/font/local';
+import Header from 'components/Header';
 
 const publicGothic = localFont({
   src: '../public/fonts/public_gothic_square-webfont.woff2',
@@ -27,6 +28,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
+      <Header />
       <body>{children}</body>
     </html>
   );
