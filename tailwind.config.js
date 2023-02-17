@@ -6,7 +6,11 @@ module.exports = {
     './content/**/*.mdx',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-pgs)'],
+      },
+    },
   },
   plugins: [require('@tailwindcss/typography')],
 }
